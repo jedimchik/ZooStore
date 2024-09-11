@@ -1,0 +1,192 @@
+@import url("top-navigation-alter.css");
+@import url("../styles/footer.css");
+@import url("shopping-cart.css");
+@import url("mobile-menu.css");
+
+:root {
+  --ff-title: "Playfair Display", serif;
+  --ff-text: "Montserrat", sans-serif;
+  --standard-padding-inline: 300px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--ff-text);
+}
+.title {
+  height: 200px;
+  background-color: rgba(230, 230, 230, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+.title span {
+  color: rgba(150, 149, 149, 1);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22.5px;
+  letter-spacing: 0.05em;
+}
+.title h1 {
+  font-family: var(--ff-title);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.story {
+  padding-inline: var(--standard-padding-inline);
+  padding-block: 100px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 70px;
+}
+.story-section {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+.story-section h2 {
+  font-family: var(--ff-title);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  margin-bottom: 40px;
+}
+.story-section p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+}
+.story-info-2 {
+  order: 2;
+}
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  :root {
+    --standard-padding-inline: 150px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .story-section img {
+    max-height: 600px;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --standard-padding-inline: 100px;
+  }
+  .story-section {
+    column-gap: 35px;
+  }
+  .story-section p {
+    font-size: 14px;
+  }
+  .footer {
+    padding-block: 50px;
+  }
+  .resources {
+    display: flex;
+    column-gap: 25px;
+  }
+  .columns {
+    column-gap: 50px;
+  }
+  .res-group a {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 775px) {
+  :root {
+    --standard-padding-inline: 10px;
+  }
+  .cart a img {
+    content: url("../images-fox/header footer/shopping cart.svg");
+  }
+  .logo a img {
+    content: url("../images-fox/header footer/logo text.svg");
+  }
+  .mobile-nav {
+    background: url("../images-fox/mobile/open menu.svg") no-repeat center;
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+  }
+  .navigation {
+    padding-inline: var(--standard-padding-inline);
+    padding-block: 10px;
+    background: rgba(0, 0, 0, 0.45);
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .links {
+    display: none;
+  }
+  .title {
+    height: 140px;
+  }
+
+  .story {
+    padding-block: 20px;
+  }
+  .story-section {
+    flex-direction: column;
+  }
+  .story-section img {
+    object-fit: none;
+    margin-top: 20px;
+    order: 2;
+    max-width: calc(100% + 20px);
+  }
+
+  .columns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 35px;
+  }
+  .company-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .resources {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-inline: 20px;
+    row-gap: 20px;
+  }
+  .res-group {
+    width: 40%;
+  }
+
+  .shopping-cart {
+    width: 100vw;
+  }
+}

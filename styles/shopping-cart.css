@@ -1,0 +1,170 @@
+:root {
+  --ff-title: "Playfair Display", serif;
+  --ff-text: "Montserrat", sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.shopping-cart {
+  height: 100vh;
+  width: 450px;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: 1s;
+}
+.your-bag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.close-cart {
+  background: url("../images-fox/shopping cart/close cart.svg") no-repeat center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  margin-block: 40px;
+}
+.shopping-cart > span {
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 22.5px;
+  letter-spacing: 0.05em;
+}
+.shopping-cart h1 {
+  font-family: var(--ff-title);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.bag {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  overflow: auto;
+  max-height: calc(100vh - 550px);
+  width: 430px;
+}
+.bag::-webkit-scrollbar {
+  width: 5px;
+}
+.bag::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.added-item {
+  display: flex;
+  column-gap: 50px;
+}
+.what-added img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.what-added-info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  padding-inline: 3px;
+}
+.order-settings {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.quantity {
+  height: 90px;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.quantity span {
+  border: none;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 20px;
+  background-color: rgba(204, 85, 32, 1);
+  color: white;
+  width: 30px;
+  height: 40px;
+  padding-block: 10px;
+}
+.quantity button {
+  cursor: pointer;
+  font-size: 40px;
+  border: none;
+  background-color: white;
+}
+.remove {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+.remove span {
+  color: rgba(140, 140, 140, 1);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+.remove button {
+  background: url("../images-fox/shopping cart/remove item.svg") no-repeat
+    center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+}
+.shopping-cart-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  width: 100%;
+  margin-block: 30px;
+}
+.shopping-cart-summary h3,
+.shopping-cart-summary span {
+  font-family: var(--ff-title);
+  font-size: 37px;
+  font-weight: 800;
+  line-height: 55.5px;
+  letter-spacing: 0.05em;
+}
+.shopping-cart-summary button {
+  width: 350px;
+  height: 70px;
+  border: none;
+  background-color: rgba(204, 85, 32, 1);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.blur {
+  filter: brightness(30%) blur(30px);
+  pointer-events: none;
+  user-select: none;
+  transition: 0.4s;
+}
+#open-cart {
+  cursor: pointer;
+}

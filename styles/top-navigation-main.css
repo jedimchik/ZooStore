@@ -1,0 +1,37 @@
+.navigation {
+  padding-inline: var(--standard-padding-inline);
+  background: rgba(0, 0, 0, 0.45);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  width: 123px;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.links ul {
+  display: flex;
+  column-gap: 20px;
+  font-size: 14px;
+}
+.links ul li {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.links ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+.links ul li a:hover {
+  color: rgba(204, 85, 32, 1);
+}

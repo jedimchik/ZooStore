@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/shop.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fox Store</title>
+  </head>
+  <body>
+    <div class="mobile-nav-hidden hidden">
+      <a href=""
+        ><img
+          src="../images-fox\header footer\logo text.svg"
+          alt="Company Logo"
+      /></a>
+
+      <div class="mobile-navigation-links">
+        <li><a href="../index.html">main Page</a></li>
+        <li><a href="shop.html">shop</a></li>
+        <li><a href="history.html">our history</a></li>
+        <li><a href="#">contact us</a></li>
+      </div>
+
+      <button class="close-mobile-nav" id="close-mobile-nav"></button>
+    </div>
+    <div id="toblur">
+      <div class="navigation">
+        <button id="mobile-nav-open" class="mobile-nav"></button>
+        <div class="logo">
+          <a href="../index.html"
+            ><img
+              src="..\images-fox\header footer\logo text orange.svg"
+              alt="Company Logo"
+          /></a>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="../index.html">main page</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="history.html">our history</a></li>
+            <li><a href="../index.html">contact us</a></li>
+          </ul>
+        </div>
+        <div class="cart">
+          <a id="open-cart"
+            ><img
+              src="..\images-fox\header footer\shopping cart black.svg"
+              alt="shopping cartt"
+          /></a>
+        </div>
+      </div>
+
+      <div class="title">
+        <span>Our products</span>
+        <h1>All Items</h1>
+      </div>
+
+      <div class="gallery">
+        <div class="filter" id="filters">
+          <div class="search">
+            <input type="text" id="searchField" placeholder="Search" />
+            <button></button>
+          </div>
+
+          <div class="topic">
+            <span>Topic</span>
+            <div class="topic-options" id="topicList">
+              <div>
+                <input checked type="radio" name="topic-select" id="all" />
+                <label for="all">All</label>
+              </div>
+              <div>
+                <input type="radio" name="topic-select" id="forest" /><label
+                  for="forest"
+                  >Forest</label
+                >
+              </div>
+              <div>
+                <input type="radio" name="topic-select" id="for kids" /><label
+                  for="for kids"
+                  >For kids</label
+                >
+              </div>
+              <div>
+                <input type="radio" name="topic-select" id="other" /><label
+                  for="other"
+                  >Other</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="price">
+            <span>Price</span>
+
+            <input
+              id="priceSlider"
+              class="slider"
+              type="range"
+              min="0"
+              max="500"
+              value="500"
+              oninput="priceValue.innerText = this.value"
+            />
+            <span class="price-outcome"
+              >Value: $ <span id="priceValue">500</span></span
+            >
+          </div>
+
+          <div class="active-filters" id="activefilters">
+            <span class="filter-display" id="activeFiltersSearch"></span>
+            <span class="filter-display" id="activeFiltersTopic"></span>
+            <span class="filter-display" id="activeFiltersPrice"></span>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="items-holder" id="items-holder"></div>
+          <button class="show-more" id="showAllFoxes">All pets</button>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="columns">
+          <div class="company-info">
+            <img
+              class="footer-logo"
+              src="..\images-fox\header footer\logo text footer.svg"
+              alt=""
+            />
+            <p>Lorem ipsum. Aliquam voluptates consequuntur.</p>
+            <span>Call us : 8956 3254 7887</span>
+            <div class="social-media">
+              <a href=""
+                ><img src="..\images-fox\social media\instagram.svg" alt=""
+              /></a>
+              <a href=""
+                ><img src="..\images-fox\social media\telegram.svg" alt=""
+              /></a>
+              <a href=""
+                ><img src="..\images-fox\social media\twitter.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="resources">
+            <div class="res-group">
+              <h4>Shop</h4>
+              <a href="">Lorem, ipsum.</a>
+              <a href="">Lorem, ipsum.</a>
+            </div>
+            <div class="res-group">
+              <h4>Products</h4>
+              <a href="">Lorem, ipsum.</a>
+              <a href="">Lorem, ipsum.</a>
+            </div>
+            <div class="res-group">
+              <h4>Collection</h4>
+              <a href="">Lorem, ipsum.</a>
+              <a href="">Lorem, ipsum.</a>
+              <a href="">Lorem, ipsum.</a>
+              <a href="">Lorem, ipsum.</a>
+            </div>
+            <div class="res-group">
+              <h4>Weekly updates</h4>
+              <a href="">Lorem, ipsum.</a>
+              <a href="">Lorem, ipsum.</a>
+              <a href="">Lorem, ipsum.</a>
+            </div>
+
+            <div class="res-group">
+              <h4>About us</h4>
+              <a href="">Lorem, ipsum.</a>
+              <a href="">Lorem, ipsum.</a>
+            </div>
+          </div>
+        </div>
+        <span class="copyright">Storelogo, 2023 All rights reserved</span>
+      </div>
+    </div>
+  </body>
+  <script src="../modules/shop.js" type="module"></script>
+</html>
